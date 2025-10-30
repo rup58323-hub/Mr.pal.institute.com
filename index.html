@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Web and Software Development Training Center - Courses</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --accent: #0ea5a4;
+    --deep: #071024;
+    --card: rgba(255,255,255,0.06);
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    font-family:"Poppins",system-ui,Roboto,Arial;
+    background:linear-gradient(180deg,#e6f6f6,#f4fbff);
+    padding:28px;
+    color:var(--deep);
+    display:flex;
+    justify-content:center;
+  }
+
+  .container{
+    width:100%;
+    max-width:1100px;
+  }
+
+  .hero{
+    background:
+      linear-gradient(180deg, rgba(7,16,36,0.48), rgba(7,16,36,0.48)),
+      url("https://cdn.pixabay.com/photo/2017/08/10/07/43/computer-2617707_1280.jpg") center/cover no-repeat;
+    color:white;
+    border-radius:14px;
+    padding:28px;
+    display:grid;
+    grid-template-columns: 1fr 420px;
+    gap:20px;
+    align-items:stretch;
+    box-shadow:0 12px 30px rgba(2,6,23,0.12);
+  }
+
+  .left{
+    padding:14px 18px;
+  }
+  .brand{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    font-weight:700;
+    font-size:20px;
+  }
+  .brand .dot{width:12px;height:12px;border-radius:50%;background:var(--accent);box-shadow:0 6px 18px rgba(14,165,164,0.18)}
+  .title{
+    margin-top:14px;
+    font-size:30px;
+    font-weight:800;
+    line-height:1.02;
+  }
+  .subtitle{margin-top:8px;font-weight:400;color:rgba(255,255,255,0.92)}
+
+  /* package cards row */
+  .packages{
+    margin-top:20px;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:12px;
+  }
+
+  .pkg{
+    background:var(--card);
+    padding:12px;
+    border-radius:10px;
+    min-height:110px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+  }
+  .pkg h4{margin:0;font-size:16px;font-weight:700}
+  .pkg .meta{font-size:13px;margin-top:6px;color:rgba(255,255,255,0.92)}
+  .price{margin-top:8px;font-weight:800;font-size:20px;color:var(--deep);background:#fff;padding:8px 12px;border-radius:8px;display:inline-block}
+
+  .cta{
+    margin-top:16px;
+    display:flex;
+    gap:10px;
+    align-items:center;
+  }
+  .btn{
+    background:var(--accent);
+    color:var(--deep);
+    border:none;
+    padding:10px 16px;
+    border-radius:10px;
+    font-weight:700;
+    cursor:pointer;
+  }
+  .btn.secondary{
+    background:transparent;
+    color:white;
+    border:1px solid rgba(255,255,255,0.12);
+    padding:8px 12px;
+  }
+
+  /* right panel */
+  .right{
+    background:linear-gradient(180deg, rgba(255,255,255,0.95), rgba(255,255,255,0.95));
+    color:var(--deep);
+    padding:18px;
+    border-radius:12px;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+  }
+  .right h3{margin:0;font-size:20px}
+  .big-price{font-size:32px;font-weight:900;color:var(--accent)}
+  .info{font-size:13px;color:#234}
+
+  /* full course box */
+  .full{
+    margin-top:12px;
+    background:#fff7ea;
+    border-radius:10px;
+    padding:10px 12px;
+    width:100%;
+    text-align:left;
+    color:#6a3f00;
+    box-shadow:0 6px 18px rgba(106,63,0,0.06);
+  }
+  .list{margin:0;padding:0;list-style:none;font-weight:600}
+  .list li{margin:6px 0;font-size:14px}
+
+  @media (max-width:980px){
+    .hero{grid-template-columns:1fr; padding:18px}
+    .packages{grid-template-columns:1fr}
+  }
+  @media (max-width:480px){
+    .title{font-size:22px}
+    .brand{font-size:16px}
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="hero" role="region" aria-label="Course banner">
+      <div class="left">
+        <div class="brand"><span class="dot" aria-hidden="true"></span>Web and Software Development Training Center</div>
+        <div class="title">Full Course Catalog — Practical & Certificate Programs</div>
+        <div class="subtitle">Beginner → Advanced | Hands-on projects | Small batches | Certificate on completion</div>
+
+        <div class="packages" aria-hidden="false">
+          <!-- Basic computer package -->
+          <div class="pkg" role="article" aria-label="Basic Computer Package">
+            <div>
+              <h4>Basic Computer Package</h4>
+              <div class="meta">Word • Excel • PowerPoint • Notepad • Paint</div>
+            </div>
+            <div>
+              <div class="price">₹ 3,000</div>
+              <div style="font-size:12px;color:rgba(255,255,255,0.9);margin-top:6px">Duration: 6 months</div>
+            </div>
+          </div>
+
+          <!-- Programming - Web Design -->
+          <div class="pkg" role="article" aria-label="Programming Web Design">
+            <div>
+              <h4>Programming — Web Design</h4>
+              <div class="meta">HTML • CSS • JavaScript • Bootstrap</div>
+            </div>
+            <div>
+              <div class="price">₹ 8,000</div>
+              <div style="font-size:12px;color:rgba(255,255,255,0.9);margin-top:6px">Duration: 6 months</div>
+            </div>
+          </div>
+
+          <!-- Web development - Advance -->
+          <div class="pkg" role="article" aria-label="Web Development Advanced">
+            <div>
+              <h4>Web Development — Advanced</h4>
+              <div class="meta">Advanced HTML/CSS/JS/Bootstrap • PHP • MySQL (Database)</div>
+            </div>
+            <div>
+              <div class="price">₹ 10,000</div>
+              <div style="font-size:12px;color:rgba(255,255,255,0.9);margin-top:6px">Duration: 8 months</div>
+            </div>
+          </div>
+
+          <!-- Software & Android App -->
+          <div class="pkg" role="article" aria-label="Software and Android App Development">
+            <div>
+              <h4>Software & Android App Development</h4>
+              <div class="meta">Java • .NET • Linux • C • C++</div>
+            </div>
+            <div>
+              <div class="price">₹ 15,000</div>
+              <div style="font-size:12px;color:rgba(255,255,255,0.9);margin-top:6px">Duration: 1 year</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cta" aria-hidden="false">
+          <button class="btn" onclick="alert('Call/WhatsApp: +91-XXXXXXXXXX')">Enroll Now</button>
+          <button class="btn secondary" onclick="alert('Visit: 123 Main Road, Your City')">Visit / Contact</button>
+        </div>
+
+        <div class="full" aria-label="Full 3-year program">
+          <strong>Full Course (3+ years)</strong> — Complete professional program with advanced topics, live projects, internships & <strong>Certificate</strong>. Ideal for job readiness and deep specialization.
+        </div>
+      </div>
+
+      <aside class="right" aria-label="Quick info">
+        <h3>Quick Enrollment Info</h3>
+        <div class="big-price">Flexible Fees & Installments</div>
+        <div class="info">Small batches • Practical labs • Weekend/evening classes • Placement guidance</div>
+
+        <div style="width:100%; text-align:left; margin-top:6px;">
+          <div style="font-weight:800; margin-bottom:8px;">Contact</div>
+          <div style="font-size:14px;">Call / WhatsApp: <strong>+91-6294697599</strong></div>
+          <div style="font-size:13px;color:#345">Address, janai road station to near janai kali mondir,,,,,janai bazar pin-712304</div>
+        </div>
+
+        <div style="width:100%; margin-top:8px;">
+          <div style="font-weight:700; margin-bottom:6px;">Course Highlights</div>
+          <ul class="list">
+            <li>Hands-on projects & assignments</li>
+            <li>Real-world tools & IDEs</li>
+            <li>Certificate & placement support</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+</body>
+</html>
